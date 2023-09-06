@@ -109,7 +109,6 @@ button {
 
 .header-logo-dark {
   color: var(--navyblue);
-  margin-right: 76px;
 }
 
 .header-logo-white {
@@ -409,7 +408,7 @@ section.section-principles {
   align-items: center;
   flex-wrap: wrap;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 8px;
+ 
 }
 
 .social-list-item {
@@ -506,7 +505,7 @@ section.section-principles {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  gap: 72px 24px;
+  gap: 72px 0;
   text-align: center;
 }
 
@@ -518,14 +517,13 @@ section.section-principles {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
-  padding-top: 16px;
   width: 264px;
 }
 
 footer .header-logo {
   display: inline-block;
   margin-right: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .social-media {
@@ -607,7 +605,7 @@ footer .header-logo {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  
 }
 
 .footer-form-input {
@@ -726,16 +724,11 @@ footer .header-logo {
 }
 
 .project-card-list {
-  cursor: pointer;
-  display: flex;
-  width: 360px;
-  height: 420px;
-  padding-bottom: 0px;
+  
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  flex-shrink: 0;
-  background: var(--white);
+  
 
   flex-basis: calc((100% - 24px * 2) / 3);
   background: var(--white);
@@ -743,7 +736,7 @@ footer .header-logo {
 
 .project-card-list:hover,
 .project-card-list:focus {
-  border: 1px solid var(--cloud);
+  
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -1128,7 +1121,7 @@ footer .header-logo {
 
 .contacts-wrap .contacts,
 .contacts-wrap .contacts-item:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .contacts-wrap .contacts-item__link {
@@ -1142,7 +1135,7 @@ footer .header-logo {
 
 .contacts-wrap .contacts-item__link--bold {
   color: var(--iris);
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.111;
   letter-spacing: 0.045em;
@@ -1170,6 +1163,10 @@ footer .header-logo {
 @media only screen and (min-width: 767.98px) {
 
   /* header */
+  .header-logo{
+    margin-right: 120px;
+
+  }
   .header-nav__list {
     display: flex;
   }
@@ -1219,8 +1216,10 @@ footer .header-logo {
   }
 
   .container-footer {
-    text-align: left;
+    text-align: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
 
   .footer-form {
@@ -1249,8 +1248,7 @@ footer .header-logo {
   }
 
   .container-footer {
-    padding-left: 108px;
-    padding-right: 108px;
+    max-width: 584px;
   }
 }
 
@@ -1302,7 +1300,7 @@ footer .header-logo {
   }
 
   .webstudio-footer {
-    margin-right: 96px;
+    margin-right: 120px;
   }
 
   .footer-bottom {
